@@ -1,5 +1,17 @@
+(defconst config-dir (file-name-directory load-file-name))
+
+(defun load-conf (file)
+  (load-file (concat config-dir file)))
+
 ;; MELPA repository
-(load-file "packagerepository.el")
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+(load-conf "packagerepository.el")
 
 
 ;; Change yes/no questions to y/n questions by default
@@ -13,13 +25,16 @@
 )
 
 ;; Text editing
-(load-file "editing.el")
+(load-conf "editing.el")
 
 ;; Indentation
-(load-file "indentation.el")
+(load-conf "indentation.el")
 
 ;; Tab bar
-(load-file "tabbar.el")
+(load-conf "tabbar.el")
+
+;; Multiple Cursors
+(load-conf "multicursor.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

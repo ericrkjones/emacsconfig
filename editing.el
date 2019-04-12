@@ -1,5 +1,8 @@
 ;; Editor commands
 
+;; Turn off word wrap for programming modes
+(add-hook 'prog-mode-hook (lambda () (setq truncate-lines t)))
+
 ;; Change C-f and C-S-f to isearch regex forward and backward respectively
 (global-set-key (kbd "C-f") 'isearch-forward-regexp)
 (global-set-key (kbd "C-S-f") 'isearch-backward-regexp)
