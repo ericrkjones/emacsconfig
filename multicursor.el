@@ -7,7 +7,7 @@
 ;; This should be replaced with a method that accepts regular expressions!
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-(global-set-key (kbd "C-M-<") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-M-a") 'mc/mark-all-like-this)
 
 ;; Command to exit multiple cursors (duplicate of C-g)
 (define-key mc/keymap (kbd "C-<escape>") 'keyboard-quit)
