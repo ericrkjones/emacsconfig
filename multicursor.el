@@ -8,6 +8,7 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-M-a") 'mc/mark-all-like-this)
+(global-set-key (kbd "C-S-l") 'mc/edit-lines)
 
 ;; Command to exit multiple cursors (duplicate of C-g)
 (define-key mc/keymap (kbd "C-<escape>") 'keyboard-quit)
