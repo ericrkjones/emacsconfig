@@ -13,6 +13,7 @@
 
 ;; Change C-w to close current buffer
 (global-set-key (kbd "C-w") 'kill-this-buffer)
+(global-set-key (kbd "C-S-w") 'kill-buffer-and-window)
 
 ;; Change C-o to run the find-file interactive Lisp function
 (global-set-key (kbd "C-o") 'find-file)

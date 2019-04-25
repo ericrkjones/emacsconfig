@@ -4,15 +4,23 @@
 (setq mc/cmds-to-run-for-all
       '(
         cua-copy-region
+        cua-cut-region
         ignore
         keyboard-escape-quit
         keyboard-quit
+        overwrite-mode
         ))
 
 (setq mc/cmds-to-run-once
       '(
         cua--prefix-override-handler
+        cua-paste
+        cua-scroll-up
         cua-set-rectangle-mark
+        mark-whole-buffer
         mouse-set-region
+        scroll-bar-toolkit-scroll
+        scroll-restore-mode
+        tabbar-backward-tab
         widget-button-click
         ))
