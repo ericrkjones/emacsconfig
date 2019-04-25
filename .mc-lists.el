@@ -5,17 +5,18 @@
       '(
         cua-copy-region
         cua-cut-region
-        ignore
-        keyboard-escape-quit
-        keyboard-quit
-        overwrite-mode
+        cua-paste
+        cua-scroll-down
+        cua-scroll-up
+        insert-current-date
+        insert-current-datetime
+        insert-current-time
+        insert-current-unixtime
         ))
 
 (setq mc/cmds-to-run-once
       '(
         cua--prefix-override-handler
-        cua-paste
-        cua-scroll-up
         cua-set-rectangle-mark
         mark-whole-buffer
         mouse-set-region
