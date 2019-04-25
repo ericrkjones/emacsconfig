@@ -19,3 +19,7 @@
   (interactive)
   (insert (shell-command-to-string "echo -n $(date \"+%s\")")))
 
+(global-set-key (kbd "C-; d") 'insert-current-date)
+(global-set-key (kbd "C-; t") 'insert-current-time)
+(global-set-key (kbd "C-; ;") 'insert-current-datetime)
+(global-set-key (kbd "C-; :") 'insert-current-unixtime)
