@@ -26,6 +26,7 @@
 
 ;; Text editing
 (load-conf "editing.el")
+(load-conf "autosave.el")
 
 ;; Indentation
 (load-conf "indentation.el")
