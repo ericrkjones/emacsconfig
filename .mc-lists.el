@@ -12,6 +12,7 @@
         insert-current-datetime
         insert-current-time
         insert-current-unixtime
+        tab-to-tab-stop
         ))
 
 (setq mc/cmds-to-run-once
