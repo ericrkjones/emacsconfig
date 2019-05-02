@@ -21,8 +21,10 @@
         cua-set-rectangle-mark
         mark-whole-buffer
         mouse-set-region
+        new-file-tmp
         scroll-bar-toolkit-scroll
         scroll-restore-mode
         tabbar-backward-tab
+        wdired-finish-edit
         widget-button-click
         ))
