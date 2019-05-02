@@ -12,6 +12,9 @@
         insert-current-datetime
         insert-current-time
         insert-current-unixtime
+        org-metaleft
+        org-metaright
+        org-self-insert-command
         tab-to-tab-stop
         ))
 
