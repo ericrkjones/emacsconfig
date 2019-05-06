@@ -3,16 +3,7 @@
 (defun load-conf (file)
   (load-file (concat config-dir file)))
 
-;; MELPA repository
-
-;; Added by Package.el.  This must come before configurations of
-;; installed packages.  Don't delete this line.  If you don't want it,
-;; just comment it out by adding a semicolon to the start of the line.
-;; You may delete these explanatory comments.
-(package-initialize)
-
 (load-conf "packagerepository.el")
-
 
 ;; Change yes/no questions to y/n questions by default
 (defalias 'yes-or-no-p 'y-or-n-p)
@@ -42,6 +33,9 @@
 
 ;; Org-Mode
 (load-conf "orgmode.el")
+
+;; Web Browsing
+(load-conf "webbrowser.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

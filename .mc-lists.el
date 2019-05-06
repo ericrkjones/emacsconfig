@@ -22,6 +22,7 @@
       '(
         cua--prefix-override-handler
         cua-set-rectangle-mark
+        end-of-buffer
         mark-whole-buffer
         mouse-set-region
         new-file-tmp
