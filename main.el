@@ -35,7 +35,7 @@
 (load-conf "orgmode.el")
 
 ;; Web Browsing
-(load-conf "webbrowser.el")
+;;(load-conf "webbrowser.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

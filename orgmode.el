@@ -1,3 +1,4 @@
+(require 'org)
 (setq org-support-shift-select t)
 (setq org-startup-truncate t)
 
