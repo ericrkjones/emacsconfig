@@ -30,6 +30,7 @@
 
 ;; Macros
 (load-conf "macros.el")
+(load-conf "current-datetime.el")
 
 ;; Org-Mode
 (load-conf "orgmode.el")

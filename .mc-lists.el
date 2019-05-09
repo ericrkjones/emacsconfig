@@ -12,6 +12,7 @@
         insert-current-datetime
         insert-current-time
         insert-current-unixtime
+        org-cycle
         org-metaleft
         org-metaright
         org-self-insert-command

@@ -6,6 +6,7 @@
   tabbar.el v1.7."
 (list (cond ((string-equal "*" (substring (buffer-name) 0 1)) "emacs")
             ((eq major-mode 'dired-mode) "emacs")
+            ((eq major-mode 'org-mode) "user")
             (t "user"))))
 (setq tabbar-buffer-groups-function 'my-tabbar-buffer-groups)
 
