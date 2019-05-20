@@ -30,3 +30,19 @@
 ;;                                                        (url-encode-url subject)
 ;;                                                        "&attach="
 ;;                                                        (file-name-nondirectory (org-html-export-to-html)))))))
+
+
+(defvar org-meeting-notes-directory "~/Notes/org/Meetings")
+(defun org-new-meeting-notes (title people)
+  "Create a new file for meeting notes and insert typical header information."
+  (interactive "MTitle:\nMCSV List of Participants:")
+  (find-file (concat (file-name-as-directory org-meeting-notes-directory)
+                                    (concat (get-current-date)
+                                            " "
+                                            title
+                                            ".org")))
+  (insert (concat "#+Title: " title "\n"
+                  "#+Date: " (get-current-datetime) "\n"
+                  "#+People: " (concat ":"
+                                       (mapconcat 'identity (split-string people ",+ *") ":")
+                                       ":") "\n")))

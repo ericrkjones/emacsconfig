@@ -3,33 +3,55 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        beginning-of-buffer
         cua-copy-region
         cua-cut-region
         cua-paste
         cua-scroll-down
         cua-scroll-up
+        downcase-region
+        indent-for-tab-command
         insert-current-date
         insert-current-datetime
         insert-current-time
         insert-current-unixtime
         org-cycle
+        org-force-self-insert
+        org-forward-paragraph
         org-metaleft
         org-metaright
+        org-return
         org-self-insert-command
+        org-shiftcontrolleft
+        org-shiftcontrolright
+        org-shiftleft
+        org-shiftright
+        org-shifttab
+        org-shiftup
+        org-table-copy-down
+        org-table-insert-column
+        overwrite-mode
         tab-to-tab-stop
+        upcase-region
+        wdired-downcase-word
+        wdired-upcase-word
         ))
 
 (setq mc/cmds-to-run-once
       '(
         cua--prefix-override-handler
+        cua-mode
         cua-set-rectangle-mark
         end-of-buffer
         mark-whole-buffer
+        mouse-appearance-menu
         mouse-set-region
         new-file-tmp
         scroll-bar-toolkit-scroll
         scroll-restore-mode
         tabbar-backward-tab
+        tabbar-forward-tab
+        tabbar-mwheel-forward-group
         wdired-finish-edit
         widget-button-click
         ))
