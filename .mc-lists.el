@@ -4,12 +4,14 @@
 (setq mc/cmds-to-run-for-all
       '(
         beginning-of-buffer
+        beginning-of-visual-line
         cua-copy-region
         cua-cut-region
         cua-paste
         cua-scroll-down
         cua-scroll-up
         downcase-region
+        end-of-visual-line
         indent-for-tab-command
         insert-current-date
         insert-current-datetime
