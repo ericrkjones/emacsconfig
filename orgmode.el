@@ -49,3 +49,13 @@
                   "#+People: " (concat ":"
                                        (mapconcat 'identity (split-string people ",+ *") ":")
                                        ":") "\n")))
+
+(defvar org-journal-notes-directory "~/Notes/org/Journal")
+(defun org-new-journal-entry-daily ()
+  "Create a new journal entry and fill in header information."
+  (interactive)
+  (find-file (concat (file-name-as-directory org-meeting-notes-directory)
+                                    (concat (get-current-date)
+                                            ".org")))
+  (insert (concat "#+Date: " (get-current-datetime) "\n"
+                  "#+Author: Eric Jones\n")))
