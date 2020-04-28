@@ -20,5 +20,5 @@ emacsdir=~/.emacs.d
 emacsconf=~/.emacs
 git clone git@github.com:mysterioustrashninja/emacsconfig.git $emacsdir
 [[ -L $emacsconf ]] && rm $emacsconf || mv $emacsconf $emacsconf.old
-ln -s $emacsconf $emacsdir/.emacs
+ln -s $emacsdir/.emacs $emacsconf
 ```
