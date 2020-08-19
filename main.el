@@ -35,6 +35,12 @@
 ;; Org-Mode
 (load-conf "orgmode.el")
 
+;; Multi-Web-Mode
+;; (load-conf "multi-web-mode.el")
+
+;; Web-Mode
+(load-conf "web-mode.el")
+
 ;; Web Browsing
 ;;(load-conf "webbrowser.el")
 
