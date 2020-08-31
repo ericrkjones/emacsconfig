@@ -1,12 +1,15 @@
 (require 'org)
 (setq org-support-shift-select t)
-(setq org-startup-truncate t)
+(setq org-startup-truncated t)
 
 ;; Silly duplicate key mapping entry.
 ;; Fix this by putting all custom keymaps into a minor mode and enabling
 ;; that minor mode at all times with priority over other modes. 
 (define-key org-mode-map (kbd "<C-tab>") 'tabbar-forward-tab)
 (define-key org-mode-map (kbd "<C-iso-leftab>") 'tabbar-backward-tab)
+
+;; Hook to add visual line with visual-line-mode breaks tables
+;;(add-hook 'org-mode-hook 'visual-line-mode 1)
 
 ;; Define functions for export from org and email.
 ;; Evolution CLI does not seem to support putting a complex body in an email in any way,
@@ -59,3 +62,4 @@
                                             ".org")))
   (insert (concat "#+Date: " (get-current-datetime) "\n"
                   "#+Author: Eric Jones\n")))
+

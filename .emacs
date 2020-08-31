@@ -11,7 +11,7 @@
  '(mc/edit-lines-empty-lines nil)
  '(package-selected-packages
    (quote
-    (## w3m tabbar multiple-cursors auto-complete adaptive-wrap)))
+    (web-mode multi-web-mode ## w3m tabbar multiple-cursors auto-complete adaptive-wrap)))
  '(scroll-restore-mode t)
  '(show-paren-mode t)
  '(tabbar-background-color "gray14")

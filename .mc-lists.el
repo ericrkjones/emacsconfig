@@ -9,6 +9,7 @@
         c-electric-pound
         c-electric-semi&comma
         c-electric-slash
+        cua--prefix-copy-handler
         cua-copy-region
         cua-cut-region
         cua-paste
@@ -21,21 +22,26 @@
         insert-current-datetime
         insert-current-time
         insert-current-unixtime
+        isearch-abort
+        isearch-printing-char
         org-cycle
         org-force-self-insert
         org-forward-paragraph
+        org-meta-return
         org-metaleft
         org-metaright
         org-return
         org-self-insert-command
         org-shiftcontrolleft
         org-shiftcontrolright
+        org-shiftdown
         org-shiftleft
         org-shiftright
         org-shifttab
         org-shiftup
         org-table-copy-down
         org-table-insert-column
+        org-yank
         overwrite-mode
         tab-to-tab-stop
         upcase-region
@@ -49,16 +55,21 @@
         cua-mode
         cua-set-rectangle-mark
         end-of-buffer
+        hs-mouse-toggle-hiding
+        ignore
         isearch-forward-regexp
         mark-whole-buffer
         mouse-appearance-menu
+        mouse-drag-header-line
         mouse-set-region
+        mouse-start-rectangular-region
         new-file-tmp
         scroll-bar-toolkit-scroll
         scroll-restore-mode
         tabbar-backward-tab
         tabbar-forward-tab
         tabbar-mwheel-forward-group
+        tabbar-select-tab-callback
         wdired-finish-edit
         widget-button-click
         ))
