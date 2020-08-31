@@ -5,6 +5,10 @@
       '(
         beginning-of-buffer
         beginning-of-visual-line
+        c-electric-paren
+        c-electric-pound
+        c-electric-semi&comma
+        c-electric-slash
         cua-copy-region
         cua-cut-region
         cua-paste
@@ -45,6 +49,7 @@
         cua-mode
         cua-set-rectangle-mark
         end-of-buffer
+        isearch-forward-regexp
         mark-whole-buffer
         mouse-appearance-menu
         mouse-set-region
