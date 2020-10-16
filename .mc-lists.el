@@ -5,6 +5,7 @@
       '(
         beginning-of-buffer
         beginning-of-visual-line
+        c-electric-lt-gt
         c-electric-paren
         c-electric-pound
         c-electric-semi&comma
