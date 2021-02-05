@@ -1,19 +1,19 @@
 ;;Datetime insert functions
 (defun get-current-datetime ()
   "Gets the current local datetime with timezone as a string."
-  (shell-command-to-string "echo -n $(date \"+%F %T %Z\")"))
+  (format-time-string "+%F %T %Z"))
 
 (defun get-current-time ()
   "Gets the current local time as a string."
-  (shell-command-to-string "echo -n $(date \"+%T\")"))
+  (format-time-string "+%T"))
 
 (defun get-current-date ()
   "Gets the current local date in ISO format as a string."
-  (shell-command-to-string "echo -n $(date \"+%F\")"))
+  (format-time-string "+%F"))
 
 (defun get-current-unixtime ()
   "Gets the unix timestamp in seconds-since-epoch as a string."
-  (shell-command-to-string "echo -n $(date \"+%s\")"))
+  (format-time-string "+%s"))
   
 (defun insert-current-datetime ()
   "Inserts the current local datetime with timezone."

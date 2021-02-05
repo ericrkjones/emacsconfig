@@ -9,11 +9,11 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ;; Create a temporary shortcut to reload this config
-(defun load-emacs()
-  "Loads the user's default emacs configuration file."
-  (interactive)
-  (load-file "~/.emacs")
-)
+;;(defun load-emacs()
+;;  "Loads the user's default emacs configuration file."
+;;  (interactive)
+;;  (load-file "~/.emacs")
+;;)
 
 ;; Text editing
 (load-conf "editing.el")

@@ -1,5 +1,6 @@
 ;;(package-initialize)
-(load-file "~/.emacs.d/main.el")
+(load-file (concat user-emacs-directory
+             (convert-standard-filename "lisp/main.el")))
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -7,17 +8,16 @@
  ;; If there is more than one, they won't work right.
  '(cua-mode t nil (cua-base))
  '(cursor-type t)
- '(custom-enabled-themes (quote (wombat)))
+ '(custom-enabled-themes '(wombat))
  '(mc/edit-lines-empty-lines nil)
  '(package-selected-packages
-   (quote
-    (web-mode ## w3m tabbar multiple-cursors auto-complete adaptive-wrap)))
+   '(zenburn-theme omnisharp csproj-mode csharp-mode diffview web-mode ## w3m tabbar multiple-cursors auto-complete adaptive-wrap))
  '(scroll-restore-mode t)
  '(show-paren-mode t)
  '(tabbar-background-color "gray14")
  '(tabbar-mode t nil (tabbar))
- '(tabbar-scroll-left-button (quote (("") "")))
- '(tabbar-scroll-right-button (quote (("") "")))
+ '(tabbar-scroll-left-button '(("") ""))
+ '(tabbar-scroll-right-button '(("") ""))
  '(tool-bar-mode nil)
  '(tooltip-mode nil)
  '(x-stretch-cursor t))
