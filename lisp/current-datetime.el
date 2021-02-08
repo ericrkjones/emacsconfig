@@ -1,19 +1,23 @@
 ;;Datetime insert functions
 (defun get-current-datetime ()
   "Gets the current local datetime with timezone as a string."
-  (format-time-string "+%F %T %Z"))
+  (format-time-string "%F %T %z"))
+
+(defun get-current-datetime-hyphenated ()
+  "Gets the current local datetime as a hyphen-separated string."
+  (format-time-string "%Y-%m-%d-%H-%M-%S"))
 
 (defun get-current-time ()
   "Gets the current local time as a string."
-  (format-time-string "+%T"))
+  (format-time-string "%T"))
 
 (defun get-current-date ()
   "Gets the current local date in ISO format as a string."
-  (format-time-string "+%F"))
+  (format-time-string "%F"))
 
 (defun get-current-unixtime ()
   "Gets the unix timestamp in seconds-since-epoch as a string."
-  (format-time-string "+%s"))
+  (format-time-string "%s"))
   
 (defun insert-current-datetime ()
   "Inserts the current local datetime with timezone."
