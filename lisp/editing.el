@@ -52,5 +52,5 @@ ICON.xbm, using ‘find-image’."
                'new-file :label "" :help "New untitled File")
   (define-key tool-bar-map (vector 'new-file) nil)
   )
-(global-set-key (kbd "C-n") 'new-file-tmp)
+(global-set-key (kbd "C-S-O") 'new-file-tmp)
 
