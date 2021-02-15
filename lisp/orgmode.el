@@ -74,13 +74,13 @@
 (defun os-screenclip-to-file (path)
   "Takes a screenclip and saves it to a file in an XFCE4 desktop."
   (interactive "FPath:")
-  (shell-command (concat "xfce4-screenshooter --region --save " path)))
+  (shell-command (concat "xfce4-screenshooter --region --save \"" path "\"")))
 
 (defun org-insert-screenclip ()
   "Take a screenclip into a named and time-stamped file in the same directory as the open buffer and insert a link to the file."
   (interactive)
-  (let ((description (read-string "Clip description:")))
-    (let ((defaultfilename (concat (os-sanitize-filename description) " " (get-current-datetime-hyphenated) ".jpg")))
+  (let ((description (read-string "Clip description (blank for inline):")))
+    (let ((defaultfilename (concat (os-sanitize-filename description) (get-current-datetime-hyphenated) ".png")))
       (let ((filename (read-file-name (concat "Filename [" defaultfilename "]:") nil defaultfilename)))
         (os-screenclip-to-file filename)
-        (org-insert-link nil filename description)))))
+        (org-insert-link nil (concat "file:" filename) description)))))
